@@ -20,15 +20,10 @@
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="437371159584-asolv0gh898t2dnd0fgiso8omi0utisd.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-</head>
-
-<body>
-
-	<div class="super_container">
-
-        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
     <script>
       function onSignIn(googleUser) {
+        alert('Hii')
+        debugger;
         // Useful data for your client-side scripts:
         var profile = googleUser.getBasicProfile();
         console.log("ID: " + profile.getId()); // Don't send this directly to your server!
@@ -43,9 +38,13 @@
         console.log("ID Token: " + id_token);
       }
     </script>
+</head>
 
+<body>
+
+	<div class="super_container">
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 		<!-- Header -->
-
 		<header class="header">
 			<div class="header_content d-flex flex-row align-items-center justify-content-start">
 				<div class="logo">Neil<span>.</span>CV</div>
