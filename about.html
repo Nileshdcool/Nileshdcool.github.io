@@ -44,6 +44,15 @@
 
 	<div class="super_container">
         <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+		<a href="#" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
 		<!-- Header -->
 		<header class="header">
 			<div class="header_content d-flex flex-row align-items-center justify-content-start">
