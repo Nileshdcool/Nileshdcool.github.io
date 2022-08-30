@@ -16,43 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <!-- <meta>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 </meta> -->
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="437371159584-asolv0gh898t2dnd0fgiso8omi0utisd.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
-      function onSignIn(googleUser) {
-        alert('Hii')
-        debugger;
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      }
-    </script>
+	<!-- <meta>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 </meta> -->
+	<meta name="google-signin-scope" content="profile email">
 </head>
 
 <body>
 
 	<div class="super_container">
-        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-		<a href="#" onclick="signOut();">Sign out</a>
-<script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-</script>
 		<!-- Header -->
 		<header class="header">
 			<div class="header_content d-flex flex-row align-items-center justify-content-start">
@@ -116,26 +86,30 @@
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div
 										class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-										<img src="images/icon_1.png" alt=""></div>
+										<img src="images/icon_1.png" alt="">
+									</div>
 									<div class="general_info_text">Name: <span>Neil Sukalikar</span></div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div
 										class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-										<i class="fa fa-map-marker fa-2x" style="color: #7c7ad4;" aria-hidden="true"></i>
+										<i class="fa fa-map-marker fa-2x" style="color: #7c7ad4;"
+											aria-hidden="true"></i>
 									</div>
 									<div class="general_info_text">Location: <span>Navi Mumbai India</span></div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div
 										class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-										<img src="images/icon_2.png" alt=""></div>
+										<img src="images/icon_2.png" alt="">
+									</div>
 									<div class="general_info_text">Date of Birth: <span>March 23, 1990</span></div>
 								</li>
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div
 										class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-										<img src="images/icon_3.png" alt=""></div>
+										<img src="images/icon_3.png" alt="">
+									</div>
 									<div class="general_info_text"><a
 											href="mailto:neil.sukalikar@gmail.com?subject=Regarding Development Role">neil.sukalikar@gmail.com</a>
 									</div>
@@ -143,7 +117,8 @@
 								<li class="d-flex flex-row align-items-center justify-content-start">
 									<div
 										class="general_info_icon d-flex flex-column align-items-start justify-content-center">
-										<img src="images/icon_4.png" alt=""></div>
+										<img src="images/icon_4.png" alt="">
+									</div>
 									<div class="general_info_text">+91 9699948214</div>
 								</li>
 								<!-- <li class="d-flex flex-row align-items-center justify-content-start">
@@ -185,8 +160,10 @@
 						<div class="about_content">
 							<div class="about_title">Description</div>
 							<div class="about_text">
-								<p>Self-motivated, creative full stack software engineer with blockchain experience, having 8+ years of experience in
-									web, mobile, dapp, smart- watch application development, specialized in computer science
+								<p>Self-motivated, creative full stack software engineer with blockchain experience,
+									having 8+ years of experience in
+									web, mobile, dapp, smart- watch application development, specialized in computer
+									science
 									with a keen interest in latest technologies.</p>
 							</div>
 
